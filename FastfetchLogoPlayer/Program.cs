@@ -10,6 +10,8 @@ namespace FastfetchLogoPlayer
         private static string[] Logos;
         private static int currentLogoIndex;
 
+        private const string Version = "v1.0";
+
         static void Main(string[] args)
         {
             try
@@ -41,7 +43,7 @@ namespace FastfetchLogoPlayer
                     Console.Clear();
                     Console.ResetColor();
 
-                    Console.WriteLine($" {currentLogoIndex + 1}/{Logos.Length} | {Logos[currentLogoIndex]}  ||  Fastfetch Logo Player v1.0  by isHuaMouRen");
+                    Console.WriteLine($" {currentLogoIndex + 1}/{Logos.Length} | {Logos[currentLogoIndex]}  ||  Fastfetch Logo Player {Version}  by isHuaMouRen");
                     _fm.ShowLogo(Logos[currentLogoIndex]);
                     Console.WriteLine("← 上一个Logo | → 下一个Logo | e 指定一个Logo | h 帮助 | q 退出");
 
@@ -78,8 +80,8 @@ namespace FastfetchLogoPlayer
                             break;
                         case ConsoleKey.H:
                             Console.Clear();
-                            var text = """
-                                Fastfetch Logo Player
+                            var text = $"""
+                                Fastfetch Logo Player {Version}
                                         made by isHuaMouRen (https://github.com/isHuaMouRen)
 
                                     提供一个交互式终端界面，用于预览Fastfetch提供的所有内置Logo
