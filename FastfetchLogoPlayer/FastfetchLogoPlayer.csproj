@@ -8,5 +8,6 @@
     <PublishAot>true</PublishAot>
     <InvariantGlobalization>true</InvariantGlobalization>
     <NoWarn>CS8618</NoWarn>
+    <AssemblyName>fflp</AssemblyName>
   </PropertyGroup>
 </Project>
